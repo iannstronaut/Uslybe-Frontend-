@@ -1,8 +1,11 @@
 ## Uslybe (Frontend)
-This Project Using NextJs and Capacitor JS (for native)
+
+This Project Using Vite + ReactJs and Capacitor JS (for native)
+
 ## Getting Started
 
 First, run the development server:
+
 ```bash
 npm run dev
 # or
@@ -13,6 +16,6 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:5173) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/App.jsx`. The page auto-updates as you edit the file.
