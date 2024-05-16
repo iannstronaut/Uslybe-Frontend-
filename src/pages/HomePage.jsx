@@ -1,9 +1,5 @@
-import { PostCard } from "@/components/ui/card";
-
-export const metadata = {
-  title: "Uslybe | Home",
-  description: "Connect With Your Friends",
-};
+import { PostCard } from "../components/ui/Card";
+import React from "react";
 
 export default function Home() {
   return (

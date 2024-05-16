@@ -1,21 +1,15 @@
-import { PostCard } from "@/components/ui/Card";
-import { ArrowCircleDown } from "iconsax-react";
+import { PostCard } from "../components/ui/Card";
+import React from "react";
 
 export default function Profile() {
   return (
     <div>
-      <div className="fixed top-0 left-0 w-full bg-content drop-shadow-md border-t border-terang p-2 z-40">
-        <div className="flex justify-center items-center gap-2 h-8">
-          <h1 className="font-medium">MasDeveloper123</h1>
-          <ArrowCircleDown size="18" color="#eeeeee" variant="Broken" />
-        </div>
-      </div>
       <div className="my-14 flex flex-col items-center">
         <div className="flex flex-col items-center gap-4">
           <img
             src="https://forum-mgmp-arab.id/wp-content/uploads/2017/10/user9.jpg"
             alt="profile"
-            className="rounded-full w-32 border-2 border-violet"
+            className="rounded-full w-32 border-2 border-violet-500"
           />
           <h1 className="font-medium">MasDeveloper123</h1>
           <div className="flex justify-center">
