@@ -1,6 +1,8 @@
 import { Heart, Message2, Repeat } from "iconsax-react";
+import { useState } from "react";
 
 function PostCard() {
+  const [isLiked, setIsLiked] = useState(false);
   return (
     <div className="bg-content drop-shadow-md rounded-2xl flex flex-col web:w-1/3 tablet:w-1/2 phone:w-full h-fit p-2 gap-2">
       <div className="flex items-center gap-2">
@@ -22,9 +24,19 @@ function PostCard() {
         nostrum debitis iusto eveniet ratione sed autem?
       </p>
       <div className="flex gap-2">
-        <Heart size="24" color="#eeeeee" variant="Broken" />
-        <Message2 size="16" color="#eeeeee" variant="Broken" />
-        <Repeat size="24" color="#eeeeee" variant="Broken" />
+        <button onClick={(event) => setIsLiked(!isLiked)}>
+          <Heart
+            size="24"
+            color={`${isLiked === true ? "#8b5cf6" : "#eeeeee"}`}
+            variant={`${isLiked === true ? "Bold" : "Broken"}`}
+          />
+        </button>
+        <button>
+          <Message2 size="24" color="#eeeeee" variant="Broken" />
+        </button>
+        <button>
+          <Repeat size="24" color="#eeeeee" variant="Broken" />
+        </button>
       </div>
       <p className="text-xs font-light">16 april</p>
     </div>
